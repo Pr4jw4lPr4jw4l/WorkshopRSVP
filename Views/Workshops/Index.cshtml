@@ -1,0 +1,62 @@
+@{
+    ViewData["Title"] = "Workshops";
+}
+
+<section class="hero-panel p-4 p-md-5 mb-4" aria-labelledby="workshop-heading">
+    <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+            <span class="eyebrow">Learn. Connect. Grow.</span>
+            <h1 id="workshop-heading" class="display-5 fw-bold mt-2">Workshop RSVP</h1>
+            <p class="lead mb-4">
+                Reserve your place in a practical learning session and let us know whether
+                you need accommodation. Registration takes less than a minute.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-light btn-lg" asp-controller="Workshops" asp-action="RsvpForm">
+                    Register now
+                </a>
+                <a class="btn btn-outline-light btn-lg" asp-controller="Workshops" asp-action="Registrations">
+                    View registrations
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="hero-stat" aria-label="Three workshops available">
+                <strong>3</strong>
+                <span>workshops to choose from</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section aria-labelledby="available-heading">
+    <div class="d-flex justify-content-between align-items-end mb-3">
+        <div>
+            <span class="eyebrow text-primary">Available sessions</span>
+            <h2 id="available-heading" class="h3 mb-0">Choose your learning path</h2>
+        </div>
+    </div>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <article class="workshop-card h-100">
+                <span class="workshop-number">01</span>
+                <h3 class="h5">Routing Basics</h3>
+                <p class="mb-0 text-secondary">Build confidence with conventional routes, parameters, and navigation.</p>
+            </article>
+        </div>
+        <div class="col-md-4">
+            <article class="workshop-card h-100">
+                <span class="workshop-number">02</span>
+                <h3 class="h5">EF Core Intro</h3>
+                <p class="mb-0 text-secondary">Explore how .NET applications work with structured data.</p>
+            </article>
+        </div>
+        <div class="col-md-4">
+            <article class="workshop-card h-100">
+                <span class="workshop-number">03</span>
+                <h3 class="h5">Razor Essentials</h3>
+                <p class="mb-0 text-secondary">Create clean, dynamic pages with models, syntax, and Tag Helpers.</p>
+            </article>
+        </div>
+    </div>
+</section>

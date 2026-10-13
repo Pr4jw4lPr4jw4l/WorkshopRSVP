@@ -1,0 +1,36 @@
+@model Rsvp
+
+@{
+    ViewData["Title"] = "Registration confirmed";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-xl-7">
+        <section class="confirmation-panel text-center" aria-labelledby="confirmation-heading">
+            <div class="confirmation-icon" aria-hidden="true">✓</div>
+            <span class="eyebrow text-primary">You're registered</span>
+            <h1 id="confirmation-heading" class="display-6 fw-bold">@ViewData["Message"]</h1>
+            <p class="text-secondary">Your RSVP details are shown below.</p>
+
+            <dl class="registration-summary text-start">
+                <div>
+                    <dt>Full name</dt>
+                    <dd>@Model.FullName</dd>
+                </div>
+                <div>
+                    <dt>Workshop</dt>
+                    <dd>@Model.WorkshopTitle</dd>
+                </div>
+                <div>
+                    <dt>Accommodation</dt>
+                    <dd>@(Model.NeedsAccommodation ? "Requested" : "Not requested")</dd>
+                </div>
+            </dl>
+
+            <div class="d-grid d-sm-flex justify-content-center gap-2 mt-4">
+                <a class="btn btn-primary" asp-action="RsvpForm">Register another person</a>
+                <a class="btn btn-outline-primary" asp-action="Registrations">View registrations</a>
+            </div>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,233 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 72px;
+  color: #17233b;
+  background: #f5f7fb;
+}
+
+.app-navbar {
+  background: #14213d;
+  box-shadow: 0 8px 24px rgba(20, 33, 61, 0.12);
+}
+
+.navbar-brand {
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.app-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.app-navbar .nav-link:hover,
+.app-navbar .nav-link:focus {
+  color: #ffffff;
+}
+
+.hero-panel {
+  overflow: hidden;
+  border-radius: 1.5rem;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 90% 20%, rgba(255, 183, 3, 0.4), transparent 32%),
+    linear-gradient(135deg, #0f5f75 0%, #17356b 100%);
+  box-shadow: 0 20px 50px rgba(23, 53, 107, 0.18);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.hero-stat {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 1.25rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.hero-stat strong {
+  display: block;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.hero-stat span {
+  font-weight: 600;
+}
+
+.workshop-card,
+.form-panel,
+.confirmation-panel,
+.empty-state,
+.registration-table-wrap {
+  border: 1px solid #e5e9f2;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: 0 12px 34px rgba(20, 33, 61, 0.07);
+}
+
+.workshop-card {
+  padding: 1.5rem;
+}
+
+.workshop-number {
+  display: inline-grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  color: #0d6efd;
+  font-weight: 800;
+  background: #eaf2ff;
+}
+
+.form-panel,
+.confirmation-panel {
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.accommodation-check {
+  padding: 1.1rem 1.1rem 1.1rem 2.75rem;
+  border: 1px solid #dfe5ef;
+  border-radius: 0.75rem;
+  background: #f8faff;
+}
+
+.accommodation-check .form-check-input {
+  margin-left: -1.65rem;
+}
+
+.confirmation-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1.25rem;
+  border-radius: 50%;
+  color: #116149;
+  font-size: 2rem;
+  font-weight: 800;
+  background: #d9f6eb;
+}
+
+.registration-summary {
+  margin: 2rem 0 0;
+  border: 1px solid #e5e9f2;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.registration-summary div {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.7fr) 1.3fr;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+}
+
+.registration-summary div + div {
+  border-top: 1px solid #e5e9f2;
+}
+
+.registration-summary dt,
+.registration-summary dd {
+  margin: 0;
+}
+
+.registration-summary dt {
+  color: #667085;
+}
+
+.empty-state {
+  padding: 4rem 1.5rem;
+}
+
+.empty-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  color: #0d6efd;
+  font-weight: 800;
+  background: #eaf2ff;
+}
+
+.registration-table-wrap {
+  overflow: hidden;
+}
+
+.registration-table-wrap thead th {
+  padding: 1rem;
+  color: #475467;
+  background: #f7f9fc;
+}
+
+.registration-table-wrap tbody td {
+  padding: 1rem;
+}
+
+.status-pill {
+  display: inline-block;
+  min-width: 3.25rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 750;
+}
+
+.status-pill-yes {
+  color: #07543d;
+  background: #d9f6eb;
+}
+
+.status-pill-no {
+  color: #475467;
+  background: #eef1f5;
+}
+
+.field-validation-error {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.validation-summary-valid {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .registration-summary div {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

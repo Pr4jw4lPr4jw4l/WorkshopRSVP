@@ -1,0 +1,53 @@
+@model Rsvp
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-xl-7">
+        <div class="page-heading text-center mb-4">
+            <span class="eyebrow text-primary">Save your seat</span>
+            <h1 class="display-6 fw-bold">Workshop registration</h1>
+            <p class="text-secondary mb-0">Tell us who is attending and select a workshop.</p>
+        </div>
+
+        <div class="form-panel">
+            <form asp-controller="Workshops" asp-action="Confirm" method="post" novalidate>
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+                <input asp-for="SubmissionId" type="hidden" />
+
+                <div class="mb-4">
+                    <label asp-for="FullName" class="form-label fw-semibold"></label>
+                    <input asp-for="FullName" class="form-control form-control-lg" autocomplete="name"
+                           placeholder="e.g., Jordan Lee" />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-4">
+                    <label asp-for="WorkshopTitle" class="form-label fw-semibold"></label>
+                    <select asp-for="WorkshopTitle" asp-items="ViewBag.WorkshopOptions"
+                            class="form-select form-select-lg">
+                        <option value="">Choose a workshop</option>
+                    </select>
+                    <span asp-validation-for="WorkshopTitle" class="text-danger"></span>
+                </div>
+
+                <div class="form-check accommodation-check mb-4">
+                    <input asp-for="NeedsAccommodation" class="form-check-input" />
+                    <label asp-for="NeedsAccommodation" class="form-check-label fw-semibold"></label>
+                    <div class="form-text">Select this if our team should contact you about accessibility needs.</div>
+                </div>
+
+                <div class="d-grid d-sm-flex gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg px-4">Confirm registration</button>
+                    <a class="btn btn-outline-secondary btn-lg" asp-action="Index">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
