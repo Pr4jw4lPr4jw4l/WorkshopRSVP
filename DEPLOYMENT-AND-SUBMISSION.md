@@ -2,14 +2,11 @@
 
 ## GitHub
 
-The project is prepared as a local Git repository on branch `main`. To publish after GitHub is connected:
+The project has been published as a public repository:
 
-```powershell
-git remote add origin https://github.com/<your-account>/<your-repository>.git
-git push -u origin main
-```
+https://github.com/Pr4jw4lPr4jw4l/WorkshopRSVP
 
-Then open the repository in a signed-in browser and verify that it is accessible before copying the real repository URL into Brightspace. Do not submit a placeholder URL.
+The remote repository, public visibility, default `main` branch, and uploaded branch were verified after publication.
 
 ## Windows Azure App Service
 

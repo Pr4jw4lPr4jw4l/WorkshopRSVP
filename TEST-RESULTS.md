@@ -41,9 +41,14 @@ All 17 automated checks passed against a running Release build on a temporary lo
 - Landing page and form reviewed at the Bootstrap mobile breakpoint using a 500-pixel-wide browser render.
 - No clipping, overlap, unreadable status labels, or broken layout was observed in the final reviewed renders.
 
+## GitHub publication
+
+- The `main` branch was pushed to `https://github.com/Pr4jw4lPr4jw4l/WorkshopRSVP`.
+- Authenticated repository inspection confirmed public visibility and `main` as the default branch.
+- A remote branch check confirmed that GitHub received the local commit.
+
 ## Not executed
 
-- GitHub repository accessibility was not tested because GitHub publishing is not connected in this environment.
 - Azure deployment was not executed because Azure CLI and an authenticated Azure deployment interface are unavailable.
 - Azure-hosted page behavior was not tested.
 - No Azure screenshot was captured.

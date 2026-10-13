@@ -64,6 +64,6 @@ Status: Implemented and tested locally.
 
 ## Local readiness summary
 
-All six rubric categories are implemented. The project builds, publishes, and passes the 17-test local regression suite. The required external deliverables are still outstanding: a verified GitHub repository URL, a live Windows Azure URL, and a screenshot of that real Azure-hosted application.
+All six rubric categories are implemented. The project builds, publishes, and passes the 17-test local regression suite. The public GitHub repository is verified at https://github.com/Pr4jw4lPr4jw4l/WorkshopRSVP. The remaining external deliverables are a live Windows Azure URL and a screenshot of that real Azure-hosted application.
 
 The in-memory registration collection intentionally resets when the process restarts or an Azure App Service instance recycles. This matches the lab requirement and is not persistent database storage.
